@@ -1,5 +1,5 @@
 require('harpoon').setup {
-	menu = {
-		width = 120,
-	}
+    menu = {
+        width = 120,
+    }
 }

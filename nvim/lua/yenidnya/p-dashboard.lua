@@ -1,21 +1,21 @@
 local starter = require('mini.starter')
 
 starter.setup({
-  content_hooks = {
-    starter.gen_hook.adding_bullet(""),
-    starter.gen_hook.aligning("center", "center"),
-  },
-  evaluate_single = true,
-  footer = os.date(),
-  query_updaters = [[abcdefghilmoqrstuvwxyz0123456789_-,.ABCDEFGHIJKLMOQRSTUVWXYZ]],
-  items = {
-    starter.sections.recent_files(5, true),
-    starter.sections.recent_files(5, false),
-    starter.sections.telescope(),
-    { action = "PackerSync", name = "U: Update Plugins", section = "Plugins" },
-    { action = "enew",       name = "E: New Buffer",     section = "Builtin actions" },
-    { action = "qall!",      name = "Q: Quit Neovim",    section = "Builtin actions" },
-  },
+    content_hooks = {
+        starter.gen_hook.adding_bullet(""),
+        starter.gen_hook.aligning("center", "center"),
+    },
+    evaluate_single = true,
+    footer = os.date(),
+    query_updaters = [[abcdefghilmoqrstuvwxyz0123456789_-,.ABCDEFGHIJKLMOQRSTUVWXYZ]],
+    items = {
+        starter.sections.recent_files(5, true),
+        starter.sections.recent_files(5, false),
+        starter.sections.telescope(),
+        { action = "PackerSync", name = "U: Update Plugins", section = "Plugins" },
+        { action = "enew",       name = "E: New Buffer",     section = "Builtin actions" },
+        { action = "qall!",      name = "Q: Quit Neovim",    section = "Builtin actions" },
+    },
 })
 
 vim.cmd([[

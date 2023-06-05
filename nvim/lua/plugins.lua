@@ -63,6 +63,7 @@ return require('packer').startup(function(use)
 
     -- Dashboard
     use 'echasnovski/mini.starter'
+
     -- Misc
     use "folke/todo-comments.nvim"
     use "folke/zen-mode.nvim"
@@ -70,4 +71,5 @@ return require('packer').startup(function(use)
     use "folke/which-key.nvim"
     use "airblade/vim-gitgutter"
     use "tpope/vim-fugitive"
+    use "nvim-orgmode/orgmode"
 end)

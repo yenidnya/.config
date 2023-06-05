@@ -1,5 +1,5 @@
 require("which-key").setup {
-  layout = {
-    align = 'center'
-  }
+    layout = {
+        align = 'center'
+    }
 }
