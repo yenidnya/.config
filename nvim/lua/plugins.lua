@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
     use 'MattesGroeger/vim-bookmarks'
     use 'tom-anders/telescope-vim-bookmarks.nvim'
     use 'ThePrimeagen/harpoon'
+    use "princejoogie/dir-telescope.nvim"
 
     -- Compilation
     use 'hrsh7th/cmp-buffer'

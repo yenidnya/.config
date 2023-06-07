@@ -1,5 +1,7 @@
+local t = require('telescope')
 local actions = require('telescope.actions')
-require('telescope').setup {
+
+t.setup {
     defaults = {
         path_display = { 'smart' },
         mappings = {
@@ -14,5 +16,22 @@ require('telescope').setup {
             preview_cutoff = 100,
             preview_width = 0.6
         }
-    }
+    },
+    pickers = {
+        buffers = {
+            show_all_buffers = true,
+            sort_mru = true,
+            mappings = {
+                i = {
+                    ["<c-d>"] = "delete_buffer",
+                },
+            },
+        },
+    },
 }
+
+-- Extensions
+require("dir-telescope").setup {}
+
+-- Load Extensions
+t.load_extension('dir')

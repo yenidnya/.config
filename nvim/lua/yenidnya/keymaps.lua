@@ -63,6 +63,7 @@ wk.register({
         f = { tscope_builtin.find_files, "Files" },
         g = { tscope_builtin.live_grep, "Word" },
         b = { tscope_builtin.buffers, "Buffers" },
+        d = { "<cmd>Telescope dir live_grep<CR>", "Directory" }
     }
 }, wk_opts)
 
