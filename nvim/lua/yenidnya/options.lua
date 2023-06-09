@@ -29,6 +29,11 @@ opt.autoread = true
 opt.cursorline = true
 opt.termguicolors = true
 
+opt.foldcolumn = '0'
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
+
 vim.api.nvim_create_autocmd('TextYankPost', {
     callback = function()
         vim.highlight.on_yank({

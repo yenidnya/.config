@@ -19,6 +19,9 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-web-devicons',
     }
 
+    -- Advanced folding
+    use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+
     -- Theme
     use 'navarasu/onedark.nvim'
 

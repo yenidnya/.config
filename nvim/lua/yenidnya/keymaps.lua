@@ -95,3 +95,7 @@ local mark = require('harpoon.mark')
 local ui = require('harpoon.ui')
 map.set('n', '<leader>a', mark.add_file, { desc = 'Harpoon Add' })
 map.set('n', '<C-e>', ui.toggle_quick_menu)
+
+-- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
+map.set('n', 'zR', require('ufo').openAllFolds)
+map.set('n', 'zM', require('ufo').closeAllFolds)

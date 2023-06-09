@@ -18,6 +18,7 @@ require 'yenidnya.p-telescope'
 require 'yenidnya.p-todo_comments'
 require 'yenidnya.p-which_key'
 require 'yenidnya.p-zen_mode'
+require 'yenidnya.p-ufo'
 
 -- needs to be initialised before treesitter
 require('orgmode').setup_ts_grammar()

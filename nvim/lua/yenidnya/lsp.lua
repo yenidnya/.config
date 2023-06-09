@@ -9,6 +9,12 @@ require('mason-lspconfig').setup({
 })
 
 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+lsp_capabilities.textDocument.foldingRange = {
+    dynamicRegistration = false,
+    lineFoldingOnly = true
+}
+
 local lsp_attach = function(_, bufnr)
     -- Create your keybindings here...
     map.set('n', '<leader>ch', vim.lsp.buf.hover, { buffer = bufnr, desc = 'Hover' })
