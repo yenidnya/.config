@@ -23,7 +23,7 @@ t.setup {
             sort_mru = true,
             mappings = {
                 i = {
-                    ["<c-d>"] = "delete_buffer",
+                    ["<C-d>"] = "delete_buffer",
                 },
             },
         },

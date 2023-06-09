@@ -43,6 +43,7 @@ wk.register({
         a = { '<cmd>ToggleAlternate<cr>', 'Alternate' },
         h = { "<cmd>nohlsearch<cr>", "Highlight" },
         z = { "<cmd>ZenMode<cr>", "ZenMode" },
+        o = { "Change TODO State" }
     }
 }, wk_opts)
 
@@ -64,6 +65,28 @@ wk.register({
         g = { tscope_builtin.live_grep, "Word" },
         b = { tscope_builtin.buffers, "Buffers" },
         d = { "<cmd>Telescope dir live_grep<CR>", "Directory" }
+    }
+}, wk_opts)
+
+-- MISC
+wk.register({
+    s = {
+        name = 'Source',
+        v = { ':ReloadConfig <CR>', '.vimrc' }
+    }
+}, wk_opts)
+
+-- Org
+wk.register({
+    o = {
+        name = "Org"
+    }
+}, wk_opts)
+
+-- Git
+wk.register({
+    h = {
+        name = "Git Hunk"
     }
 }, wk_opts)
 
